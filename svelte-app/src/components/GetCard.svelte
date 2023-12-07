@@ -1,5 +1,5 @@
 <script>
-	export let pet
+  export let pet
 
   const handleRemove = async (id) => {
     try {
