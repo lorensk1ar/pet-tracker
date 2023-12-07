@@ -57,6 +57,7 @@ Backend runs on http://127.0.0.1:5000/
   	```bash
   	cd pet-tracker/svelte-app/src
 	npm run dev
+	npm install @rollup/plugin-json (if sh: rollup: command not found)
 
 Front end runs on http://localhost:8080/
 
