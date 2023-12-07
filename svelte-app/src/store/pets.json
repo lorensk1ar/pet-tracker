@@ -1,0 +1,20 @@
+ [
+      {
+      "name": "Gruffy",
+      "picture": "fluffy.png",
+      "species": "Dog",
+      "friendly": true
+    },
+    {
+      "name": "Whiskers",
+      "picture": "whiskers.png",
+      "species": "Cat",
+      "friendly": false
+    },
+    {
+      "name": "Bubbles",
+      "picture": "bubbles.png",
+      "species": "Fish",
+      "friendly": false
+    }
+  ]
