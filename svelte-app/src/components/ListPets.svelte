@@ -22,7 +22,7 @@
 <h3> Pet List </h3>
 
 {#each pets as pet}
-  <GetCard {pet} {update} />
+  <GetCard {pet} />
   <hr>
 {/each}
 
