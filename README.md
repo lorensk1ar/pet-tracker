@@ -49,13 +49,14 @@ The Pet Tracker App is a web application that helps veterinarians identify their
   	```bash
   	cd pet-tracker/flask-app/src
   	python3 api.py
+   	python3 db.py (to initialize database if no database exists)
 
 Backend runs on http://127.0.0.1:5000/
 
 2.	Launch frontend:
   	```bash
   	cd pet-tracker/svelte-app/src
-	  npm run dev
+	npm run dev
 
 Front end runs on http://localhost:8080/
 
