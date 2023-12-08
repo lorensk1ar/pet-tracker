@@ -18,14 +18,16 @@ def hello():
 def create_pet():
     try:
         data = request.json
-        conn = sqlite3.connect(db)
-        cursor = conn.cursor()
-        cursor.execute("INSERT INTO pets (name, picture, species, friendly) VALUES (?, ?, ?, ?)", 
-                       (data['name'], data['picture'], data['species'], data['friendly']))
-
-        conn.commit()
-        conn.close()
-        return jsonify({'message': 'Hello, ' + data['name'] + '!', 'data': data}), 201
+        if len(data['name']) > 0 and len(data['picture']) > 0 and len(data['species']):
+            conn = sqlite3.connect(db)
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO pets (name, picture, species, friendly) VALUES (?, ?, ?, ?)", 
+                (data['name'], data['picture'], data['species'], data['friendly']))
+            conn.commit()
+            conn.close()
+            return jsonify({'message': 'Hello, ' + data['name'] + '!', 'data': data}), 201
+        else:
+            return jsonify({'error': str(e)}), 500
     except Exception as e:
         print(e)
         return jsonify({'error': str(e)}), 500
