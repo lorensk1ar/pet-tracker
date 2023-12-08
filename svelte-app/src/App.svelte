@@ -11,8 +11,8 @@
 		<AddPet />
 	</section>
 
-	<section>
-		<ListPets role="list" id="list-pets-heading" aria-labelledby="list-pets-heading">
+	<section role="list" id="list-pets-heading" aria-labelledby="list-pets-heading">
+		<ListPets />
 	</section>
 </main>
 
