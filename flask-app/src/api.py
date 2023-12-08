@@ -25,7 +25,7 @@ def create_pet():
 
         conn.commit()
         conn.close()
-        return jsonify({'message': 'Hello, ' + data.name + '!', 'data': data}), 201
+        return jsonify({'message': 'Hello, ' + data['name'] + '!', 'data': data}), 201
     except Exception as e:
         print(e)
         return jsonify({'error': str(e)}), 500
