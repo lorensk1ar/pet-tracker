@@ -4,15 +4,15 @@
 
 </script>
 
-<main>
+<main role="main">
 	<h1>Pet Tracker</h1>
 
-	<section>
+	<section role="form" id="add-pet-heading" aria-labelledby="add-pet-heading">
 		<AddPet />
 	</section>
 
 	<section>
-		<ListPets />
+		<ListPets role="list" id="list-pets-heading" aria-labelledby="list-pets-heading">
 	</section>
 </main>
 
