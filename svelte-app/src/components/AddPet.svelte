@@ -38,7 +38,7 @@
 </script>
 
 <form>
-  <h3>New Pet</h3>
+  <h2>New Pet</h2>
   <div>
     <label for="pet-name">Pet Name<span class="required">*</span>: </label>
     <input type="text" id="pet-name" bind:value={newPet.name} required/>

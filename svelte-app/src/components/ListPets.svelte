@@ -19,11 +19,13 @@
 
 </script>
 
-<h3> Pet List </h3>
+<h2> Pet List </h2>
 
 {#each pets as pet}
-  <GetCard {pet} />
-  <hr>
+  <section>
+    <GetCard {pet} />
+    <hr>
+  </section>
 {/each}
 
 
