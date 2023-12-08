@@ -12,7 +12,6 @@
 
       if (response.ok) {
         console.log('Remove ok')
-        update = true
       } else {
         console.error('Remove fail')
       }
